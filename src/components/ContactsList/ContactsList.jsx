@@ -20,7 +20,6 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-// import { cyan } from '@mui/material/colors';
 import { teal } from '@mui/material/colors';
 import toast from 'react-hot-toast';
 
@@ -85,7 +84,7 @@ export const ContactsList = () => {
                 <IconButton
                   aria-label="delete"
                   size="large"
-                  color="default"
+                  color="error"
                   onClick={() => {
                     handleDeleteContact(id, name);
                   }}
@@ -111,8 +110,7 @@ export const ContactsList = () => {
 
       {filter && !isLoading && visibleContacts.length === 0 && (
         <NotFoundNotification>
-          No contacts matching your search query: "{filter}". Please change your
-          search parameters and try again.
+          "{filter}" is not in your contact list.
         </NotFoundNotification>
       )}
     </Box>
