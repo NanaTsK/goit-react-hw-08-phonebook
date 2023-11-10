@@ -53,7 +53,7 @@ export const RegisterForm = () => {
     >
       <TextField
         required
-        label="Full name"
+        label="Name"
         placeholder="Alex Alex"
         value={name}
         onChange={({ target }) => {
