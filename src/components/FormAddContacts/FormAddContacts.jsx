@@ -4,7 +4,6 @@ import { selectContacts } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/thunks';
 import { Box, Button, TextField } from '@mui/material';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
-import { teal } from '@mui/material/colors';
 
 import toast from 'react-hot-toast';
 
@@ -80,10 +79,6 @@ export const FormAddContacts = () => {
         variant="outlined"
         type="submit"
         size="large"
-        sx={{
-          color: teal[700],
-          borderColor: teal[700],
-        }}
         startIcon={<PersonAddAlt1Icon />}
       >
         Add contact

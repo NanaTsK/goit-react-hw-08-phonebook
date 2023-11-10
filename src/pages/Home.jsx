@@ -48,7 +48,11 @@ const Home = () => {
         <Typography
           variant="h5"
           mb={'20px'}
-          sx={{ textAlign: 'center', fontWeight: '600', color: '#4db6ac' }}
+          sx={{
+            textAlign: 'center',
+            fontWeight: '600',
+            color: 'primary.light',
+          }}
         >
           Welcome {name}! <br /> Visit your <Link to="contacts">Contacts</Link>!
         </Typography>
@@ -56,7 +60,11 @@ const Home = () => {
         <Typography
           variant="h5"
           mb={'20px'}
-          sx={{ textAlign: 'center', fontWeight: '600', color: '#4db6ac' }}
+          sx={{
+            textAlign: 'center',
+            fontWeight: '600',
+            color: 'primary.light',
+          }}
         >
           All your contacts at one place. <br />
           <Link to="login">Login</Link> | <Link to="register">Sign up</Link>

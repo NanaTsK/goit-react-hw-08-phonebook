@@ -7,7 +7,6 @@ import {
   Tooltip,
   Typography,
 } from '@mui/material';
-import { teal } from '@mui/material/colors';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -44,7 +43,7 @@ export const UserMenu = () => {
     <Box sx={{ flexGrow: 0 }}>
       <Tooltip title="Menu">
         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-          <Avatar sx={{ bgcolor: teal[300] }}>
+          <Avatar sx={{ bgcolor: 'primary.light' }}>
             {name?.at(0)?.toUpperCase()}
           </Avatar>
         </IconButton>

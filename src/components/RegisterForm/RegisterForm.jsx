@@ -4,7 +4,6 @@ import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { signUp } from 'redux/auth/thunks';
-import { teal } from '@mui/material/colors';
 
 const INITIAL_STATE = {
   name: '',
@@ -81,15 +80,7 @@ export const RegisterForm = () => {
           setPassword(target.value);
         }}
       />
-      <Button
-        variant="outlined"
-        type="submit"
-        size="large"
-        sx={{
-          color: teal[700],
-          borderColor: teal[700],
-        }}
-      >
+      <Button variant="outlined" type="submit" size="large">
         Sign up
       </Button>
       <Typography>

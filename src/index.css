@@ -7,10 +7,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25; */
 }
 
 code {
@@ -39,8 +35,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/* h1,
-h2 {
-  text-shadow: 1px 3px 0 #505050, -1px 3px 0 #505050;
-} */

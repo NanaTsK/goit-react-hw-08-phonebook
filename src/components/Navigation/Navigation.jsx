@@ -149,6 +149,7 @@ export const Navigation = () => {
         sx={{
           flexGrow: 1,
           display: { xs: 'none', md: 'flex' },
+          marginBottom: '-4px',
         }}
       >
         <Button

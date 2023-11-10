@@ -6,7 +6,6 @@ import {
   CardContent,
   Typography,
 } from '@mui/material';
-import { teal } from '@mui/material/colors';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectUserEmail, selectUserName } from 'redux/auth/selectors';
 import { logOut } from 'redux/auth/thunks';
@@ -22,10 +21,10 @@ export const UserProfile = () => {
       <CardContent>
         <Avatar
           sx={{
-            bgcolor: teal[300],
+            bgcolor: 'primary.light',
             marginBottom: '16px',
-            width: 60,
-            height: 60,
+            width: 56,
+            height: 56,
           }}
         >
           {name?.at(0)?.toUpperCase()}
@@ -41,9 +40,6 @@ export const UserProfile = () => {
         <Button
           size="large"
           variant="contained"
-          sx={{
-            bgcolor: teal[700],
-          }}
           onClick={() => dispatch(logOut())}
         >
           Logout

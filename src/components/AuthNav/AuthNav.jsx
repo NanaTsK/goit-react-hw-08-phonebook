@@ -17,6 +17,7 @@ export const AuthNav = () => {
         flexGrow: 1,
         display: { xs: 'none', md: 'flex' },
         justifyContent: 'flex-end',
+        marginBottom: '-4px',
       }}
     >
       <Button
