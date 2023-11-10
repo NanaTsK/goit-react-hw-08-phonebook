@@ -113,14 +113,14 @@ export const Navigation = () => {
             </MenuItem>
           )}
           {!isLoggedIn && (
-            <MenuItem onClick={handleNavigateToLogin}>
-              <Typography textAlign="center">Login</Typography>
-            </MenuItem>
-          )}
-          {!isLoggedIn && (
-            <MenuItem onClick={handleNavigateToSignUp}>
-              <Typography textAlign="center">Sign up</Typography>
-            </MenuItem>
+            <>
+              <MenuItem onClick={handleNavigateToLogin}>
+                <Typography textAlign="center">Login</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleNavigateToSignUp}>
+                <Typography textAlign="center">Sign up</Typography>
+              </MenuItem>
+            </>
           )}
         </Menu>
       </Box>
