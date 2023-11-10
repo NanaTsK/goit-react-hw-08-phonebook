@@ -4,79 +4,88 @@ import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { logIn } from 'redux/auth/thunks';
+import { teal } from '@mui/material/colors';
 
 const INITIAL_STATE = {
-    email: '',
-    password: '',
+  email: '',
+  password: '',
 };
 
 export const LoginForm = () => {
-    const [email, setEmail] = useState(INITIAL_STATE.email);
-    const [password, setPassword] = useState(INITIAL_STATE.password);
+  const [email, setEmail] = useState(INITIAL_STATE.email);
+  const [password, setPassword] = useState(INITIAL_STATE.password);
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    const handleLogin = async e => {
-        e.preventDefault();
+  const handleLogin = async e => {
+    e.preventDefault();
 
-        try {
-            await dispatch(logIn({ email, password })).unwrap();
-            toast.success('Welcome');
-        } catch (error) {
-            toast.error('Invalid Email or Password ');
-        }
+    try {
+      await dispatch(logIn({ email, password })).unwrap();
+      toast.success('Welcome');
+    } catch (error) {
+      toast.error('Invalid Email or Password ');
+    }
 
-        resetForm();
-    };
+    resetForm();
+  };
 
-    const resetForm = () => {
-        setEmail(INITIAL_STATE.email);
-        setPassword(INITIAL_STATE.password);
-    };
+  const resetForm = () => {
+    setEmail(INITIAL_STATE.email);
+    setPassword(INITIAL_STATE.password);
+  };
 
-    return (
-        <Box
-            component="form"
-            sx={{
-                '& > :not(style)': {
-                    m: 1,
-                    width: '500px',
-                    maxWidth: '100%',
-                },
-            }}
-            noValidate
-            onSubmit={handleLogin}
-        >
-            <TextField
-                required
-                label="Email address"
-                placeholder="mail@mail.com"
-                type="email"
-                value={email}
-                onChange={({ target }) => {
-                    setEmail(target.value);
-                }}
-            />
-            <TextField
-                required
-                label="Password"
-                placeholder="password"
-                type="password"
-                value={password}
-                onChange={({ target }) => {
-                    setPassword(target.value);
-                }}
-            />
-            <Button variant="outlined" type="submit" size="large">
-                Login
-            </Button>
-            <Typography>
-                Don't have an account yet? Please{' '}
-                <Link to="/register" underline="hover">
-                    register
-                </Link>
-                .
-            </Typography>
-        </Box>
-    );
+  return (
+    <Box
+      component="form"
+      sx={{
+        '& > :not(style)': {
+          m: 1,
+          width: '500px',
+          maxWidth: '100%',
+        },
+      }}
+      noValidate
+      onSubmit={handleLogin}
+    >
+      <TextField
+        required
+        label="Email address"
+        placeholder="mail@mail.com"
+        type="email"
+        value={email}
+        onChange={({ target }) => {
+          setEmail(target.value);
+        }}
+      />
+      <TextField
+        required
+        label="Password"
+        placeholder="password"
+        type="password"
+        value={password}
+        onChange={({ target }) => {
+          setPassword(target.value);
+        }}
+      />
+      <Button
+        variant="outlined"
+        type="submit"
+        size="large"
+        sx={{
+          color: teal[700],
+          borderColor: teal[700],
+        }}
+      >
+        Login
+      </Button>
+      <Typography>
+        Don't have an account yet? Please{' '}
+        <Link to="/register" underline="hover">
+          Sigh Up
+        </Link>
+        .
+      </Typography>
+    </Box>
+  );
 };
