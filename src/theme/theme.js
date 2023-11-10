@@ -16,3 +16,10 @@ export const theme = createTheme({
     },
   },
 });
+
+//mui theme hover style override doesn't work, thus this option chosen:
+export const getHoverStyle = color => ({
+  '& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
+    borderColor: color,
+  },
+});

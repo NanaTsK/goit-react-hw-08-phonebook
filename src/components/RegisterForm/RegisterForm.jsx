@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { signUp } from 'redux/auth/thunks';
+import { getHoverStyle } from '../../theme/theme';
 
 const INITIAL_STATE = {
   name: '',
@@ -55,6 +56,7 @@ export const RegisterForm = () => {
         label="Name"
         placeholder="Alex Alex"
         value={name}
+        sx={getHoverStyle('primary.light')}
         onChange={({ target }) => {
           setName(target.value);
         }}
@@ -66,6 +68,7 @@ export const RegisterForm = () => {
         placeholder="mail@mail.com"
         type="email"
         value={email}
+        sx={getHoverStyle('primary.light')}
         onChange={({ target }) => {
           setEmail(target.value);
         }}
@@ -75,6 +78,7 @@ export const RegisterForm = () => {
         helperText="You should not share the password with anyone!"
         placeholder="password"
         type="password"
+        sx={getHoverStyle('primary.light')}
         value={password}
         onChange={({ target }) => {
           setPassword(target.value);

@@ -6,6 +6,7 @@ import { Box, Button, TextField } from '@mui/material';
 import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 
 import toast from 'react-hot-toast';
+import { getHoverStyle } from '../../theme/theme';
 
 const INITIAL_STATE = {
   name: '',
@@ -60,6 +61,7 @@ export const FormAddContacts = () => {
         required
         label="Name"
         placeholder="🧑   Alex Alex"
+        sx={getHoverStyle('primary.light')}
         value={name}
         onChange={({ target }) => {
           setName(target.value);
@@ -69,6 +71,7 @@ export const FormAddContacts = () => {
         required
         label="Number"
         placeholder="📞   222-22-22"
+        sx={getHoverStyle('primary.light')}
         type="tel"
         value={number}
         onChange={({ target }) => {

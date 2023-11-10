@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { logIn } from 'redux/auth/thunks';
+import { getHoverStyle } from '../../theme/theme';
 
 const INITIAL_STATE = {
   email: '',
@@ -52,6 +53,7 @@ export const LoginForm = () => {
         label="Email address"
         placeholder="mail@mail.com"
         type="email"
+        sx={getHoverStyle('primary.light')}
         value={email}
         onChange={({ target }) => {
           setEmail(target.value);
@@ -62,6 +64,7 @@ export const LoginForm = () => {
         label="Password"
         placeholder="password"
         type="password"
+        sx={getHoverStyle('primary.light')}
         value={password}
         onChange={({ target }) => {
           setPassword(target.value);
