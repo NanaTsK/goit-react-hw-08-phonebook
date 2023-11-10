@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.86b08deb.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.53fc47e5.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.d24db954.js",
     "static/js/415.14be0695.chunk.js": "/goit-react-hw-08-phonebook/static/js/415.14be0695.chunk.js",
-    "static/js/790.8b190c85.chunk.js": "/goit-react-hw-08-phonebook/static/js/790.8b190c85.chunk.js",
+    "static/js/790.5598f0ca.chunk.js": "/goit-react-hw-08-phonebook/static/js/790.5598f0ca.chunk.js",
     "static/js/805.66047efa.chunk.js": "/goit-react-hw-08-phonebook/static/js/805.66047efa.chunk.js",
     "static/js/236.87f06480.chunk.js": "/goit-react-hw-08-phonebook/static/js/236.87f06480.chunk.js",
     "static/js/111.d65df927.chunk.js": "/goit-react-hw-08-phonebook/static/js/111.d65df927.chunk.js",
@@ -11,9 +11,9 @@
     "static/js/308.3b4fdbc9.chunk.js": "/goit-react-hw-08-phonebook/static/js/308.3b4fdbc9.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.86b08deb.css.map": "/goit-react-hw-08-phonebook/static/css/main.86b08deb.css.map",
-    "main.53fc47e5.js.map": "/goit-react-hw-08-phonebook/static/js/main.53fc47e5.js.map",
+    "main.d24db954.js.map": "/goit-react-hw-08-phonebook/static/js/main.d24db954.js.map",
     "415.14be0695.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/415.14be0695.chunk.js.map",
-    "790.8b190c85.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/790.8b190c85.chunk.js.map",
+    "790.5598f0ca.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/790.5598f0ca.chunk.js.map",
     "805.66047efa.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/805.66047efa.chunk.js.map",
     "236.87f06480.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/236.87f06480.chunk.js.map",
     "111.d65df927.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/111.d65df927.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.86b08deb.css",
-    "static/js/main.53fc47e5.js"
+    "static/js/main.d24db954.js"
   ]
 }
