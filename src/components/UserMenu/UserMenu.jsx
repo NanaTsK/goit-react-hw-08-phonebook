@@ -42,7 +42,6 @@ export const UserMenu = () => {
 
   return (
     <Box sx={{ flexGrow: 0 }}>
-      {/* <Tooltip title="Open settings"> */}
       <Tooltip title="Menu">
         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
           <Avatar sx={{ bgcolor: teal[300] }}>
