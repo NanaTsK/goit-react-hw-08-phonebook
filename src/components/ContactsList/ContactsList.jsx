@@ -22,6 +22,7 @@ import {
 } from '@mui/material';
 import { teal } from '@mui/material/colors';
 import toast from 'react-hot-toast';
+import { Filter } from 'components/Filter/Filter';
 
 export const ContactsList = () => {
   const dispatch = useDispatch();
@@ -45,17 +46,17 @@ export const ContactsList = () => {
     <Box
       sx={{
         width: '100%',
-        borderTop: '1px solid black',
         padding: '40px 0',
       }}
     >
       <Typography
         variant="h5"
-        mb={'20px'}
+        mb={'10px'}
         sx={{ textAlign: 'center', fontWeight: '600', opacity: '0.6' }}
       >
         Contacts
       </Typography>
+      <Filter />
 
       {isLoading && <Loader />}
 

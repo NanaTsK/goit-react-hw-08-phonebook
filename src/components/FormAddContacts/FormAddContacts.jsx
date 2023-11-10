@@ -50,7 +50,7 @@ export const FormAddContacts = () => {
       component="form"
       sx={{
         '& > :not(style)': {
-          m: 1,
+          marginTop: '10px',
           width: '100%',
         },
       }}
@@ -60,7 +60,7 @@ export const FormAddContacts = () => {
       <TextField
         required
         label="Name"
-        placeholder="Alex Alex"
+        placeholder="🧑   Alex Alex"
         value={name}
         onChange={({ target }) => {
           setName(target.value);
@@ -82,6 +82,7 @@ export const FormAddContacts = () => {
         size="large"
         sx={{
           color: teal[700],
+          borderColor: teal[700],
         }}
         startIcon={<PersonAddAlt1Icon />}
       >
