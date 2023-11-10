@@ -52,7 +52,7 @@ export const ContactsList = () => {
       <Typography
         variant="h5"
         mb={'20px'}
-        sx={{ textAlign: 'center', fontWeight: '600' }}
+        sx={{ textAlign: 'center', fontWeight: '600', opacity: '0.6' }}
       >
         Contacts
       </Typography>
