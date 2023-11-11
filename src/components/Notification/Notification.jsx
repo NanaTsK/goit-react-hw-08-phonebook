@@ -1,5 +1,5 @@
 import { NotificationText } from './Notification.styled';
 
 export const Notification = ({ children }) => {
-    return <NotificationText>{children}</NotificationText>;
+  return <NotificationText>{children}</NotificationText>;
 };

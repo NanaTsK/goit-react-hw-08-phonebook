@@ -10,7 +10,3 @@ export const NotFoundNotificationText = styled(NotificationText)(() => ({
   opacity: '1',
   color: '#4db6ac',
 }));
-
-export const ErrorNotificationText = styled(NotFoundNotificationText)(() => ({
-  color: '#D61717',
-}));

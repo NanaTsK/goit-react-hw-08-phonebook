@@ -9,7 +9,6 @@ import {
 import { deleteContact } from 'redux/contacts/thunks';
 import { Loader } from 'components/Loader/Loader';
 import { Notification } from 'components/Notification/Notification';
-// import { ErrorNotification } from 'components/Notification/ErrorNotification';
 import { selectFilter } from 'redux/filter/selectors';
 import { NotFoundNotification } from 'components/Notification/NotFoundNotification';
 import {
@@ -20,7 +19,6 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-import { teal } from '@mui/material/colors';
 import toast from 'react-hot-toast';
 import { Filter } from 'components/Filter/Filter';
 
@@ -57,7 +55,6 @@ export const ContactsList = () => {
         Contacts
       </Typography>
       <Filter />
-
       {isLoading && <Loader />}
 
       {!isLoading && visibleContacts.length > 0 && (
@@ -74,7 +71,7 @@ export const ContactsList = () => {
               >
                 <Avatar
                   sx={{
-                    bgcolor: teal[300],
+                    bgcolor: 'primary.light',
                   }}
                 >
                   {name?.at(0)?.toUpperCase()}
@@ -101,13 +98,6 @@ export const ContactsList = () => {
       {!error && !isLoading && contacts.length === 0 && (
         <Notification>Your contact list is empty!</Notification>
       )}
-
-      {/* {error && !isLoading && (
-                <ErrorNotification>
-                    Oops... Something went wrong. Error: {error}. Please, try
-                    again.
-                </ErrorNotification>
-            )} */}
 
       {filter && !isLoading && visibleContacts.length === 0 && (
         <NotFoundNotification>
